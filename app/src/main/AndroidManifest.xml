@@ -9,6 +9,43 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".TestTresActivity">
+            <intent-filter
+                android:label="Test Tres (Doesn't Exist)">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="https"
+                    android:host="shitabmir.page.link"
+                    android:pathPrefix="/test03" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TestDosActivity">
+            <intent-filter
+                android:label="Test Dos">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="https"
+                    android:host="shitabmir.page.link"
+                    android:pathPrefix="/test02" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TestUnoActivity">
+            <intent-filter
+                android:label="Test Uno">
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data
+                android:scheme="https"
+                android:host="shitabmir.page.link"
+                android:pathPrefix="/test01" />
+            </intent-filter>
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
